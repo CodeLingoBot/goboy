@@ -36,7 +36,7 @@ func (reg *register) SetHi(val byte) {
 	reg.updateMask()
 }
 
-// SetLog sets the lower byte of the register.
+// SetLo: sets the lower byte of the register.
 func (reg *register) SetLo(val byte) {
 	reg.Val = uint16(val) | (uint16(reg.Val) & 0xFF00)
 	reg.updateMask()

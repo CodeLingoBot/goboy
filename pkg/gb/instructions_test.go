@@ -45,7 +45,7 @@ func cpuInstTest(t *testing.T, options ...GameboyOption) {
 	}
 }
 
-// TestInstructionsGB tests that the CPU passes all of the test instructions
+// TestInstructionsCGB: TestInstructionsCGB tests that the CPU passes all of the test instructions
 // in the cpu_instrs rom in CGB mode (includes speed switches).
 func TestInstructionsCGB(t *testing.T) {
 	cpuInstTest(t, WithCGBEnabled())
